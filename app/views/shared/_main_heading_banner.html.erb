@@ -1,0 +1,11 @@
+<div class="main_heading_banner">
+  <span id = "title"><a href = "/dashboard">&#12484;</a></span>
+  <span class = "float_right">
+    <% if @current_user.present? %>
+      <a href="/user_profile"><%= @current_user.name.upcase %></a>
+      <a href="/logout">Logout</a>
+    <% else %>
+      <%= render :partial => "/shared/login_form" %>
+    <% end %>
+  </span>
+</div>

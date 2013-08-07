@@ -11,3 +11,52 @@
  *= require_self
  *= require_tree .
  */
+.main_heading_banner{
+  width:100%;
+  background-color: #111138;
+  height: 80px;
+  color: #BBB;
+}
+#title{
+  font-size: 60px;
+  font-weight:bolder;
+  margin: 0px;
+  cursor: pointer;
+  width: auto;
+}
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+body{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 2px solid #111138;
+  min-height: 700px;
+  background-color:#BBB;
+}
+html {
+ background-color: white;
+}
+.float_right{
+  float: right;
+}
+.flash_messages_div{
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  height: 20px;
+  left: 25%;
+  background-color: rgb(255, 255, 221);
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+}
