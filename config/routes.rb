@@ -3,6 +3,8 @@ Chatty::Application.routes.draw do
   root :to => 'application#login'
   match 'login' => 'application#login'
   match 'logout' => 'application#logout'
+  match 'messages' => 'chatty_user#messages'
+  match 'recent_conversation_with' => 'chatty_user#recent_conversation_with'
 
   resources :users
   # The priority is based upon order of creation:

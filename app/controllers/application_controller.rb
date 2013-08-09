@@ -26,6 +26,7 @@ class ApplicationController < ActionController::Base
   end
 
   def authenticated?
+    puts "_______________________________AUTHENTICATED_______________________________#{session[:user_email].present?}"
     session[:user_email].present?
   end
 
@@ -33,4 +34,5 @@ class ApplicationController < ActionController::Base
     redirect_to '/login' unless authenticated?
     @current_user = User.find_by_email(session[:user_email])
   end
+
 end

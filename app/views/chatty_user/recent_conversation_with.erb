@@ -1,0 +1,11 @@
+<table width="100%">
+<% @conversation.each do |message| %>
+  <tr><td><%= message.sent_by.split('@')[0]%>: <%= message.text %> </td></tr>
+<% end %>
+<tr>
+  <td>
+    <input type="text" name = "message_text" style="width:70%"/>
+    <input type="submit" value="Send" onclick="send_message_to( '<%=@messages_from%>')" />
+  </td>
+</tr>
+</table>
